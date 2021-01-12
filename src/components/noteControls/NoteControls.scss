@@ -1,0 +1,22 @@
+@import "bloben-common/globals/theme.scss";
+
+.note-controls__container {
+  padding-left: 24px;
+  bottom: 0px;
+  height: 56px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  border-radius: 24px 24px 0 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-scrollbar: hidden;
+}
+
+.note-option-button__container {
+  margin: 0 16px 0 16px;
+}

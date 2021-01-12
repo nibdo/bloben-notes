@@ -1,0 +1,101 @@
+@import "bloben-common/globals/theme.scss";
+
+.navbar__container {
+  height: 50px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 0  ;
+  display:flex;
+  flex-direction: row;
+  border-top: solid 0.7px $GRAY_300;
+  background-color: $SURFACE_LIGHT;
+}
+.navbar__container-dark {
+  @extend .navbar__container;
+  background-color: $headerDark;
+}
+.navbar__container-dark {
+  @extend .navbar__container;
+  border-top: none;
+}
+
+.navbar__fab {
+  position: absolute;
+  z-index: 999;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: $primary !important;
+}
+.navbar__fab-dark {
+  @extend .navbar__fab;
+  background-color: $PRIMARY_DARK !important;
+}
+.navbar__fab--icon {
+  width: 24px !important;
+  height: 24px !important;
+  color: $primaryText;
+}
+.navbar__fab--icon-dark {
+  width: 24px !important;
+  height: 24px !important;
+  color: $reverseTextDark;
+}
+.navbar__button-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10%;
+  z-index: -1 !important;
+}
+.navbar__button-container--center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+.navbar__button {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.navbar__button--left {
+  @extend .navbar__button;
+  //border-radius: 0 50% 50% 0!important;
+}
+.navbar__button--center {
+  @extend .navbar__button;
+  border-radius: 50% !important;
+}
+.navbar__button--right {
+  @extend .navbar__button;
+  border-radius: 50% 0 0 50%!important;
+}
+.navbar__button--secondary {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__icon {
+  width: 2.2rem;
+  fill: $navbarInactive !important;
+}
+.navbar__icon-dark {
+  @extend .navbar__icon;
+  fill: $navbarInactiveDark !important;
+}
+.navbar__icon-active {
+  @extend .navbar__icon;
+  fill: $primary !important;
+}
+

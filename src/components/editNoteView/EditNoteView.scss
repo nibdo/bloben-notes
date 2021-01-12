@@ -1,0 +1,82 @@
+//noinspection CssUnknownTarget
+@import "bloben-common/globals/theme.scss";
+
+.edit-note__wrapper {
+  justify-content: center;
+  align-items: center;
+  max-height: 100% !important;
+  flex-direction: column;
+  width: 100%;
+}
+
+.edit-note__container {
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  flex-direction: column;
+  padding-left: 48px;
+  padding-right: 48px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  //min-height: 100%;
+  @media (max-width: 750px) {
+    padding: 0 24px 0 24px;
+  }
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.edit-note__button-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.edit-note__icon {
+  font-size: 2.2rem !important;
+  color: $gray;
+}
+
+.edit_note__button {
+  width: auto;
+  border-radius: 12px !important;
+  padding: 6px 4px 6px 4px !important;
+}
+
+.edit-note__button--text {
+  margin-left: 8px !important;
+  font-size: 1.6rem !important;
+  color: $gray;
+}
+
+
+.edit-note__input {
+  //height: 100% !important;
+  //font-size: 1.6rem !important;
+  display: block !important;
+  //max-height: 100% !important;
+  padding: 0 0 40px 0 !important;
+}
+.edit-note__input-dark {
+  @extend .edit-note__input;
+  color: $grayDark !important;
+}
+
+.edit-note__input-title {
+  @extend .edit-note__input;
+  padding: 16px 0  !important;
+  //height: 100% !important;
+  font-size: 1.8rem !important;
+  font-weight: bold !important;
+  @media (max-width: 750px) {
+    padding: 10px 0 10px !important;
+  }
+}
+.edit-note__input-title-dark {
+  @extend .edit-note__input-title;
+  color: $textDark !important;
+}
+.keyboard-offset {
+  margin-bottom: 100%;
+}

@@ -1,0 +1,11 @@
+@import "bloben-common/globals/theme.scss";
+
+.note-text__text {
+  font-size: 1.4rem !important;
+  line-height: 20px;
+  font-family: 'Open Sans' !important;
+  align-self: center;
+  padding: 8px 0 8px 0;
+  flex-grow: 1;
+}
+

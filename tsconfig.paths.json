@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "src/*": ["*"],
+      "@bloben-package/*": [
+        "bloben-package/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@types/*": [
+        "types/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@entities/*": [
+        "entitites/*"
+      ]
+    }
+  }
+}

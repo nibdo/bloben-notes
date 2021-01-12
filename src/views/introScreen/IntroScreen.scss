@@ -1,0 +1,105 @@
+@import "bloben-common/globals/theme.scss";
+
+.intro__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 999;
+  flex-direction: column;
+  margin: 32px;
+  max-height: 100vh;
+}
+
+.intro__header-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.intro__img-logo {
+  width: 36px;
+  height: 36px;
+  fill: $GRAY_800;
+}
+
+.intro__header-text {
+  font-size: 2rem;
+  color: $GRAY_900;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  padding-left: 6px;
+}
+
+.intro__subheader-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 16px;
+  padding: 0 24px 0 24px;
+  @media (min-width: 750px) {
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+  }
+}
+
+.intro__subheader-text {
+  font-size: 4rem;
+  color: $GRAY_900;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  //text-shadow: black 0px 0px 10px;
+  @media (min-width: 750px) {
+    font-size: 6rem;
+  }
+}
+
+.intro__subheader-text-small {
+  font-size: 1.8rem;
+  color: $GRAY_800;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  //text-shadow: black 0px 0px 10px;
+
+}
+
+.intro__img-body {
+  margin-top: 30px;
+  width: 90%;
+  height: 50%;
+}
+
+.intro__buttons-container {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  width: auto;
+}
+
+.intro__background {
+  width: 100%;
+  height: 100%;
+
+}
+.bg {
+  //
+  ///* Full height */
+  //height: 100vh;
+  //max-height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - calc(100vh - 100%));
+  width: 100%;
+}

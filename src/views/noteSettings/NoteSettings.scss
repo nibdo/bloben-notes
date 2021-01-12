@@ -1,0 +1,46 @@
+@import "bloben-common/globals/theme.scss";
+
+.list-settings__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 80px;
+  margin: 24px 24px 24px 24px;
+}
+
+.list-settings__item-container {
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  padding: 16px 16px 16px 16px !important;
+  border-radius: 12px !important;
+}
+.list-settings__item-container-disabled {
+  @extend .list-settings__item-container;
+  pointer-events: none !important;
+}
+.list-settings__item-text {
+  color: $text;
+  font-size: 1.4rem !important;
+}
+.list-settings__item-text-dark {
+  @extend .list-settings__item-text;
+  color: $textDark;
+}
+.list-settings__item-text-disabled {
+  @extend .list-settings__item-text;
+  color: $gray;
+}
+.list-settings__item-text-disabled-dark {
+  @extend .list-settings__item-text-disabled;
+  color: $ICON_GRAY_DARK;
+}
+.list-settings__container-general {
+  width: 100%;
+  height: auto;
+  display: flex;
+  //border-top: solid 1px $border;
+}
+.list-settings__link {
+  display: flex;
+  width: 100%;
+}

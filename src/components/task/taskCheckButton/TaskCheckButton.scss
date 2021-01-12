@@ -1,0 +1,48 @@
+@import "bloben-common/globals/theme.scss";
+
+.task-check-button__container {
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  display: flex;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.task-check-button__icon {
+  font-size: 2.2rem !important;
+  color: $PRIMARY_LIGHT;
+}
+.task-check-button__icon-dark {
+  @extend .task-check-button__icon;
+  color: $PRIMARY_DARK;
+}
+
+.task-check-button__animate-check {
+  position: absolute;
+  z-index: 999;
+  width: 1.8rem !important;
+  fill: $PRIMARY_LIGHT;
+  opacity: 1;
+  animation-name: check-task;
+  animation-duration: 0.1s;
+}
+.task-check-button__animate-check-dark {
+  @extend .task-check-button__animate-check;
+  fill: $PRIMARY_DARK;
+}
+@keyframes check-task {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    opacity: 0.5;
+    width: 0.9rem;
+  }
+  100% {
+    opacity: 1;
+    width: 1.8rem;
+  }
+}

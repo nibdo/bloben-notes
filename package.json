@@ -1,0 +1,86 @@
+{
+  "name": "bloben-notes",
+  "version": "0.0.1",
+  "homepage": ".",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.13",
+    "@material-ui/core": "^4.3.1",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/pickers": "^3.2.10",
+    "@stomp/stompjs": "^5.4.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/crypto-js": "^3.1.45",
+    "@types/jest": "^24.0.0",
+    "@types/lodash": "^4.14.162",
+    "@types/material-ui": "^0.21.7",
+    "@types/node": "^12.0.0",
+    "@types/openpgp": "^4.4.14",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/sockjs-client": "^1.1.1",
+    "@types/uuid": "^7.0.3",
+    "axios": "^0.19.2",
+    "bottom-sheet-react": "^0.1.21",
+    "crypto-js": "^3.1.9-1",
+    "date-fns": "^2.9.0",
+    "evil-icons": "^1.10.1",
+    "localforage": "^1.9.0",
+    "lodash": "^4.17.20",
+    "lodash.shuffle": "^4.2.0",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "node-sass": "^4.13.1",
+    "openpgp": "^4.10.9",
+    "qrcode.react": "^1.0.0",
+    "react": "^16.13.1",
+    "react-column-resizer": "^1.1.9",
+    "react-dom": "^16.13.1",
+    "react-markdown": "^4.3.1",
+    "react-measure": "^2.3.0",
+    "react-redux": "^7.2.1",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.4.1",
+    "react-spring": "^8.0.27",
+    "react-stomp": "^5.0.0",
+    "redux-persist": "^6.0.0",
+    "thinbus-srp": "^1.8.0",
+    "typeface-open-sans": "0.0.75",
+    "typeface-poppins": "0.0.72",
+    "typescript": "~3.7.2",
+    "uuid": "^3.3.3"
+  },
+  "scripts": {
+    "start": "BROWSER=none PORT=4002 react-scripts start",
+    "build:development": "REACT_APP_PUBLIC_VAPID_KEY=BGLNMmqWxerq6d8nAxg-zZFXhP-t8_pDaz4GWYof6AWCxqiZ881fOCaGW89vG4Y8T7r3VXs4rPazqota5m7qGLM REACT_APP_URL=https://notes.nibdo.com REACT_APP_API_URL=https://api.nibdo.com PUBLIC_URL=https://notes.nibdo.com REACT_APP_NODE_ENV=develop npm run build",
+    "build:production": "REACT_APP_VERSION=0.1.0 REACT_APP_NAME=Notes REACT_APP_PUBLIC_VAPID_KEY=BOvP6_qzS5rYxbQDFwyON9WQUDyHx_da1S9wnKAXaJpCrdamRikQYua-LwbiggJC2qNX2kZhXV6HQ5M22Qpb2Tk REACT_APP_URL=https://notes.bloben.com REACT_APP_API_URL=https://api.bloben.com  PUBLIC_URL=https://notes.bloben.com REACT_APP_ANALYTICS_URL=https://analytics.nibdo.com REACT_APP_NODE_ENV=production npm run build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/history": "^4.7.5",
+    "prettier": "^2.0.5",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^6.1.2"
+  }
+}

@@ -1,0 +1,22 @@
+export default {
+  initialState: {
+    title: '',
+    text: '',
+    note: {},
+    body: [],
+    textWasChanged: false,
+    tagsWereChanged: false,
+    selectedTags: [],
+    tagsListIsOpen: false,
+    isFocused: false,
+    lastText: '',
+    lastTitle: '',
+    lastBody: [],
+    prevNoteSaved: false,
+    noteWasUpdated: false,
+    isShared: false,
+    notePassword: '',
+    people: [],
+    shareModalIsVisible: false,
+  },
+};

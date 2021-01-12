@@ -1,0 +1,80 @@
+@import "bloben-common/globals/theme.scss";
+
+.task__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.task__row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.task__container-reminder {
+  margin-left: 48px !important;
+  margin-bottom: 16px !important;
+  width: fit-content;
+  border-color: $PRIMARY_LIGHT !important;
+}
+.task__container-reminder-dark {
+  @extend .task__container-reminder;
+  border-color: $PRIMARY_DARK !important;
+}
+
+.task__text-reminder {
+  font-size: 1rem;
+  color: $PRIMARY_LIGHT;
+
+}
+.task__text-reminder-dark {
+  @extend .task__text-reminder;
+  color: $PRIMARY_DARK;
+}
+.task__icon-container {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.enter {
+  animation-name: enter;
+  animation-duration: 0.5s;
+}
+
+.leaving {
+  animation-name: leaving;
+  animation-duration: 0.3s;
+}
+
+@keyframes enter {
+  0% {
+    padding-left: -10px;
+    opacity: 0;
+  }
+  100% {
+    padding-left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes leaving {
+  0%{
+    height: 40px;
+    opacity: 0.4;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.sub-task__container {
+  margin-left: 36px;
+}

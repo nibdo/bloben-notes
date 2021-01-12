@@ -1,0 +1,14 @@
+{
+  "short_name": "Notes",
+  "name": "Bloben Notes",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://notes.bloben.com",
+  "display": "standalone",
+  "background_color": "#1C1C1C"
+}

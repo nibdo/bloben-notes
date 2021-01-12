@@ -1,0 +1,166 @@
+@import "bloben-common/globals/theme.scss";
+
+.note__wrapper {
+  display: flex;
+  height: auto;
+  min-height: 50px;
+  opacity: 1;
+  flex-direction: column;
+  cursor: pointer;
+  border-style: solid;
+  border-color: $borderLight;
+  border-width: $borderBottom;
+  @media (min-width: 750px) {
+    border-radius: 24px 0 0 24px;
+  }
+}
+
+.note__container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow-x: hidden;
+  padding: 16px 24px 16px 24px;
+  @media (min-width: 750px) {
+    padding: 24px 16px 16px 24px;
+  }
+  @media (max-width: 750px) {
+    margin: 0;
+  }
+}
+
+.note__row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  min-height: 50px;
+  overflow-x: hidden;
+}
+.note__row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.note__container-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+.note__text--title {
+  color: $text;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  padding-right: 16px;
+  width: 80%;
+  word-break: break-all;
+
+}
+.note__text--title-dark {
+  @extend .note__text--title;
+  color: $textDark;
+}
+
+.note__container--body {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 8px;
+}
+
+.note__text-body {
+  color: $gray;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+
+}
+.note__text--body-dark {
+  @extend .note__text--body;
+  color: $grayDark;
+}
+.note__pin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  flex-grow: 1;
+}
+
+
+.note__pin-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: $PRIMARY_LIGHT;
+}
+
+.note__footer {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding-top: 8px;
+}
+.note__footer-date {
+  color: $GRAY_600;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.enter {
+  animation-name: enter;
+  animation-duration: 0.5s;
+}
+
+.leaving {
+  animation-name: leaving;
+  animation-duration: 0.3s;
+}
+
+@keyframes enter {
+  0% {
+    padding-left: -10px;
+    opacity: 0;
+  }
+  100% {
+    padding-left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes leaving {
+  0%{
+    height: 40px;
+    opacity: 0.4;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.stripe-left {
+  box-shadow: inset 6px 0px 0px $PRIMARY_LIGHT;
+}
+
+.stripe-left-dark {
+  @extend .stripe-left;
+  box-shadow: inset 5px 0px 0px $PRIMARY_DARK;
+}
+

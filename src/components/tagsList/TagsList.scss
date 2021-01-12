@@ -1,0 +1,38 @@
+@import "bloben-common/globals/theme.scss";
+
+.tags-list__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 16px 16px 16px 0;
+  @media (min-width: 750px) {
+    padding: 0;
+  }
+}
+
+.tags-list__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tags-list__text{
+  margin-left: 8px !important;
+  font-size: 1.6rem !important;
+  color: $gray;
+}
+
+.tags-list__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  min-height: 45px !important;
+  margin: 4px 16px 4px 16px !important;
+  border-radius: 8px !important;
+  @media (min-width: 750px) {
+    margin: 0 !important;  }
+}
